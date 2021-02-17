@@ -43,5 +43,5 @@ def gettitle(web):
     titles = root.find_all("div", class_ = 'title') # 尋找所有 class = "title" 的標籤
     for title in titles:
         print(title.a.string)
-web = input("ptt website:")
+web = input("ptt website (without cookies):")
 gettitle(web)
