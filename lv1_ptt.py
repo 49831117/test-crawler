@@ -41,7 +41,10 @@ def gettitle(web):
         data = response.read().decode("utf-8")
     root = bs4.BeautifulSoup(data, "html.parser")    
     titles = root.find_all("div", class_ = 'title') # 尋找所有 class = "title" 的標籤
+    print("")
     for title in titles:
         print(title.a.string)
-web = input("ptt website (without cookies):")
+    print("")
+print("\n爬取 https://www.ptt.cc/bbs/index.html 中任一不需 over18=1 的看板標題一頁。\n")
+web = input("請輸入要爬取的批踢踢看板網址 (without cookies) （eg. https://www.ptt.cc/bbs/Stock/index.html）\n ")
 gettitle(web)

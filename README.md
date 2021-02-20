@@ -12,6 +12,11 @@
 
 ### LV1. HTML & lV2. cookie
 - Web：[批踢踢實業坊](https://www.ptt.cc/bbs/index.html)
+- [LV1 PTT](https://github.com/49831117/test-crawler/blob/master/lv1_ptt.py)
+  - 僅嘗試爬取某看板第一頁的文章標題。
+  - 無法爬取需要滿 18 歲的看板名稱。
 - [LV1+2 PTT + cookie](https://github.com/49831117/test-crawler/blob/master/lv1_and_2.py)
   - 可以選擇要讀取的看板的文章標題，以及往前讀取標題的頁數（上一頁）。
   - 一律夾帶 `over18 = 1` 的 cookie。
+
+### LV3 AJAX
